@@ -1,62 +1,59 @@
-# Visual Studio Code Documentation
+# WBF Internal Documentation
 
-You've found the GitHub repository that contains the source for the Visual Studio Code documentation at <https://code.visualstudio.com/docs>.
+Welcome to the WBF internal documentation repository!
 
-## Contribute to VS Code documentation
+## Contribute to WBF documentation
 
-Thank you for your interest in VS Code documentation!
+Thank you for your interest in contributing to WBF's internal documentation!
 
 * [Contributing](#contributing)
 * [Documentation intent](#documentation-intent)
 * [Repository organization](#repository-organization)
-* [Branches](#branches)
 * [Authoring Tools](#authoring-tools)
 * [How to use Markdown to format your topic](#how-to-use-markdown-to-format-your-topic)
 * [Topic Metadata](#topic-metadata)
 * [Formatting](#formatting)
 
->**Note**: Before submitting a pull request, especially for rendering or link issues, please review the content on the official VS Code website, [code.visualstudio.com](https://code.visualstudio.com). The element in question may render correctly after processing by the website build.
-
 ## Contributing
 
-To contribute to [VS Code documentation](https://code.visualstudio.com/docs), you need to fork this repository and submit a pull request for the Markdown and/or image changes that you're proposing.
+To contribute to WBF documentation, you can either:
+
+1. **Small changes**: Edit files directly on GitHub using the "Edit" button
+2. **Larger changes**: Fork this repository and submit a pull request
 
 * [How to fork a repository](https://docs.github.com/get-started/quickstart/fork-a-repo)
 * [How to make a pull request](https://docs.github.com/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 * [Changing a commit message](https://docs.github.com/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message)
 * [How to squash commits](https://docs.github.com/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#squash-and-merge-your-commits)
 
-The vscode-docs repository supports [Git LFS](https://git-lfs.github.com/) to allow you to avoid bringing down large image files when you clone the repository. See the [README](README.md#contributing) section for details on enabling Git LFS for your local repository.
+The wise-docs repository supports [Git LFS](https://git-lfs.github.com/) for managing large binary files. See the [README](README.md#getting-started) section for details on enabling Git LFS for your local repository.
 
 ## Documentation intent
 
-The goal of the VS Code documentation is to educate users on VS Code features and how VS Code can be used to enhance their development experience with different programming languages and runtimes.
+The goal of WBF's internal documentation is to provide clear, comprehensive information about company systems, processes, and best practices.
 
-The documentation is not intended to provide:
+The documentation should:
 
-* An introduction to coding or software development
-* Tutorials on technologies independent from VS Code
-* Promotion of third-party tools, plug-ins, or services
-* Excessive detail or advanced walkthroughs
-
-The documentation should target developers learning to use VS Code or searching for quick answers to commonly asked questions.  Other forums such as blog posts can provide more detailed content elaborating on specific scenarios.
+* Be accurate and up-to-date
+* Be easy to understand and navigate
+* Provide practical guidance and examples
+* Support both new and experienced team members
+* Cover technical and non-technical topics relevant to WBF
 
 ## Repository organization
 
 This repository contains the following top-level folders:
 
-* \api - content for the API documentation at <https://code.visualstudio.com/api>
-* \blogs - content for the blog at <https://code.visualstudio.com/blogs>
-* \build - content for the documentation build process, such as the keybinding mappings and sitemap
-* \docs - content for the documentation at <https://code.visualstudio.com/docs> - the content in this folder follows the organization of the documentation table of contents
-* \images - images used in the documentation
-* \learn - (deprecated) content for the education content at <https://code.visualstudio.com/learn>
-* \release-notes - content for the release notes at <https://code.visualstudio.com/updates>
-* \remote - content for the remote development tools documentation at <https://code.visualstudio.com/docs/remote>
-* \remote-release-notes - content for the remote development tools release notes
-* \wiki - content for the repository wiki
+* `api/` - API documentation and technical references
+* `blogs/` - Company blog posts and announcements organized by date
+* `build/` - Build scripts and configuration files
+* `docs/` - Main documentation organized by topic
+* `images/` - Shared images and assets
+* `learn/` - Learning resources, tutorials, and training materials
+* `release-notes/` - Software release notes and changelogs (if applicable)
+* `templates/` - Document templates for consistency
 
-Within these folders, you'll find the Markdown files used for the content. Each of these folders also contains an `\images` folder that references the images (such as screenshots) used in the topics.
+Within these folders, you'll find Markdown files for content. Many folders also contain an `images/` subfolder for section-specific images and screenshots.
 
 ### Branches
 
@@ -68,9 +65,11 @@ We recommend that you create local working branches that target a specific scope
 
 ## Authoring tools
 
-[Visual Studio Code](https://code.visualstudio.com) is a great editor for Markdown!
+You can use any Markdown editor to write documentation. Some popular options include:
 
-In fact, VS Code and its core documentation are written using VS Code.
+* [Visual Studio Code](https://code.visualstudio.com) - A free, powerful code editor with excellent Markdown support
+* [Typora](https://typora.io/) - A minimal Markdown editor
+* GitHub's built-in editor for quick changes
 
 ## How to use Markdown to format your topic
 
@@ -108,8 +107,8 @@ The following example shows a `Getting Started` section that has two topics.
       "name": "Getting Started",
       "area": "getstarted",
       "topics": [
-        ["VS Code Tutorial", "/docs/getstarted/getting-started"],
-        ["Copilot Quickstart", "/docs/getstarted/copilot-quickstart"]
+        ["Company Overview", "/docs/getting-started/overview"],
+        ["Tools and Systems", "/docs/getting-started/tools"]
       ]
     },
 ```
@@ -124,28 +123,30 @@ The following example shows a `Guides` subsection with two topics, within the `G
 
 ```yaml
     {
-      "name": "GitHub Copilot",
-      "area": "copilot",
+      "name": "Development",
+      "area": "development",
       "topics": [
-        ["Overview", "/docs/copilot/overview"],
-        ["Setup", "/docs/copilot/setup"],
+        ["Overview", "/docs/development/overview"],
+        ["Best Practices", "/docs/development/best-practices"],
         ["", "", {
           "name": "Guides",
-          "area": "copilot/guides",
+          "area": "development/guides",
           "topics": [
-            ["Test with Copilot", "/docs/copilot/guides/test-with-copilot"],
-            ["Debug with Copilot", "/docs/copilot/guides/debug-with-copilot"]
+            ["Setup Guide", "/docs/development/guides/setup"],
+            ["Testing Guide", "/docs/development/guides/testing"]
           ]
         }
         ],
-        ["FAQ", "/docs/copilot/faq"]
+        ["FAQ", "/docs/development/faq"]
       ]
     },
 ```
 
-## Product name
+## Product/Company Name
 
-Use the full product name "Visual Studio Code" in the topic MetaDescription and the first use in a topic. You can use the shortened "VS Code" after that throughout the rest of the content. Do not use "VSCode" (no space) or "Code".
+When referring to the company:
+* Use "WBF" or "WBF.com" consistently
+* Avoid informal variations unless contextually appropriate
 
 ### Metadata for /api docs
 
@@ -155,7 +156,7 @@ Use the full product name "Visual Studio Code" in the topic MetaDescription and 
 
 **For Doc Maintainer**:
 
-* **DateApproved** - This is set when the page is published on the VS Code website.
+* **DateApproved** - This is set when the page is published or last reviewed.
 
 ## File and Folder names
 
@@ -177,7 +178,7 @@ For example: `/docs/editor/extension-gallery.md` -> `/docs/configure/extensions/
 
 ### sitemap
 
-The code.visualstudio.com sitemap is authored in `/build/sitemap.xml` and should be updated when new topics are added or existing content moved or renamed.
+The sitemap is authored in `/build/sitemap.xml` and should be updated when new topics are added or existing content moved or renamed.
 
 ## Formatting
 
@@ -187,12 +188,12 @@ H2 subheadings `##` end up in the right-hand jump list for the document (the jum
 
 ### Text formatting
 
-Use bold for VS Code commands and UI elements.
+Use bold for commands and UI elements.
 
-    **Extensions: Install Extension**
-    **Debug Console**
+    **File: Open Folder**
+    **Settings Panel**
 
-Limit the use of bold for emphasis unless it is crucial to get the user's attention. Avoid the use of italics for emphasis since italics doesn't render well on the code.visualstudio.com site.
+Limit the use of bold for emphasis unless it is crucial to get the user's attention. Avoid the use of italics for emphasis since it may not render well in all contexts.
 
 Use inline code formatting (backticks) for settings, filename, and JSON attributes.
 

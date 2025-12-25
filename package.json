@@ -1,12 +1,13 @@
 {
-  "name": "vscode-docs",
-  "version": "0.10.3",
+  "name": "wbf-docs",
+  "version": "1.0.0",
+  "description": "WBF Internal Documentation and Knowledge Base",
   "author": {
-    "name": "Microsoft Corporation"
+    "name": "WBF"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/microsoft/vscode-docs.git"
+    "url": "https://github.com/wprettymanwbf/wise-docs.git"
   },
   "scripts": {
     "check-lfs": "node ./build/check-lfs.js",
