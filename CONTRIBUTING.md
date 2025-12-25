@@ -65,9 +65,11 @@ We recommend that you create local working branches that target a specific scope
 
 ## Authoring tools
 
-[Visual Studio Code](https://code.visualstudio.com) is a great editor for Markdown!
+You can use any Markdown editor to write documentation. Some popular options include:
 
-In fact, VS Code and its core documentation are written using VS Code.
+* [Visual Studio Code](https://code.visualstudio.com) - A free, powerful code editor with excellent Markdown support
+* [Typora](https://typora.io/) - A minimal Markdown editor
+* GitHub's built-in editor for quick changes
 
 ## How to use Markdown to format your topic
 
@@ -105,8 +107,8 @@ The following example shows a `Getting Started` section that has two topics.
       "name": "Getting Started",
       "area": "getstarted",
       "topics": [
-        ["VS Code Tutorial", "/docs/getstarted/getting-started"],
-        ["Copilot Quickstart", "/docs/getstarted/copilot-quickstart"]
+        ["Company Overview", "/docs/getting-started/overview"],
+        ["Tools and Systems", "/docs/getting-started/tools"]
       ]
     },
 ```
@@ -121,28 +123,30 @@ The following example shows a `Guides` subsection with two topics, within the `G
 
 ```yaml
     {
-      "name": "GitHub Copilot",
-      "area": "copilot",
+      "name": "Development",
+      "area": "development",
       "topics": [
-        ["Overview", "/docs/copilot/overview"],
-        ["Setup", "/docs/copilot/setup"],
+        ["Overview", "/docs/development/overview"],
+        ["Best Practices", "/docs/development/best-practices"],
         ["", "", {
           "name": "Guides",
-          "area": "copilot/guides",
+          "area": "development/guides",
           "topics": [
-            ["Test with Copilot", "/docs/copilot/guides/test-with-copilot"],
-            ["Debug with Copilot", "/docs/copilot/guides/debug-with-copilot"]
+            ["Setup Guide", "/docs/development/guides/setup"],
+            ["Testing Guide", "/docs/development/guides/testing"]
           ]
         }
         ],
-        ["FAQ", "/docs/copilot/faq"]
+        ["FAQ", "/docs/development/faq"]
       ]
     },
 ```
 
-## Product name
+## Product/Company Name
 
-Use the full product name "Visual Studio Code" in the topic MetaDescription and the first use in a topic. You can use the shortened "VS Code" after that throughout the rest of the content. Do not use "VSCode" (no space) or "Code".
+When referring to the company:
+* Use "WBF" or "WBF.com" consistently
+* Avoid informal variations unless contextually appropriate
 
 ### Metadata for /api docs
 
@@ -152,7 +156,7 @@ Use the full product name "Visual Studio Code" in the topic MetaDescription and 
 
 **For Doc Maintainer**:
 
-* **DateApproved** - This is set when the page is published on the VS Code website.
+* **DateApproved** - This is set when the page is published or last reviewed.
 
 ## File and Folder names
 
@@ -174,7 +178,7 @@ For example: `/docs/editor/extension-gallery.md` -> `/docs/configure/extensions/
 
 ### sitemap
 
-The code.visualstudio.com sitemap is authored in `/build/sitemap.xml` and should be updated when new topics are added or existing content moved or renamed.
+The sitemap is authored in `/build/sitemap.xml` and should be updated when new topics are added or existing content moved or renamed.
 
 ## Formatting
 
@@ -184,12 +188,12 @@ H2 subheadings `##` end up in the right-hand jump list for the document (the jum
 
 ### Text formatting
 
-Use bold for VS Code commands and UI elements.
+Use bold for commands and UI elements.
 
-    **Extensions: Install Extension**
-    **Debug Console**
+    **File: Open Folder**
+    **Settings Panel**
 
-Limit the use of bold for emphasis unless it is crucial to get the user's attention. Avoid the use of italics for emphasis since italics doesn't render well on the code.visualstudio.com site.
+Limit the use of bold for emphasis unless it is crucial to get the user's attention. Avoid the use of italics for emphasis since it may not render well in all contexts.
 
 Use inline code formatting (backticks) for settings, filename, and JSON attributes.
 

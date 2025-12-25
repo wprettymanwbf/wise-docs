@@ -1,6 +1,5 @@
-Copyright (c) Microsoft Corporation. All rights reserved. Distributed under the following terms:
+Copyright (c) WBF. All rights reserved.
 
-1.	Documentation is licensed under the [Creative Commons Attribution 3.0 United States License](https://creativecommons.org/licenses/by/3.0/us/legalcode). Code is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+This documentation is proprietary and confidential. It is intended for internal use only by WBF employees and authorized personnel.
 
-2.	This license does not grant you rights to use any trademarks or logos of Microsoft. For Microsoft’s general trademark guidelines, go to  https://go.microsoft.com/fwlink/?LinkID=254653.
-
+All documentation is licensed under the [Creative Commons Attribution 3.0 United States License](https://creativecommons.org/licenses/by/3.0/us/legalcode) for internal use. Code examples and scripts are licensed under the [MIT License](https://opensource.org/licenses/MIT).
