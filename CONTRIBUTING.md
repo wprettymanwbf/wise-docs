@@ -1,62 +1,59 @@
-# Visual Studio Code Documentation
+# WBF Internal Documentation
 
-You've found the GitHub repository that contains the source for the Visual Studio Code documentation at <https://code.visualstudio.com/docs>.
+Welcome to the WBF internal documentation repository!
 
-## Contribute to VS Code documentation
+## Contribute to WBF documentation
 
-Thank you for your interest in VS Code documentation!
+Thank you for your interest in contributing to WBF's internal documentation!
 
 * [Contributing](#contributing)
 * [Documentation intent](#documentation-intent)
 * [Repository organization](#repository-organization)
-* [Branches](#branches)
 * [Authoring Tools](#authoring-tools)
 * [How to use Markdown to format your topic](#how-to-use-markdown-to-format-your-topic)
 * [Topic Metadata](#topic-metadata)
 * [Formatting](#formatting)
 
->**Note**: Before submitting a pull request, especially for rendering or link issues, please review the content on the official VS Code website, [code.visualstudio.com](https://code.visualstudio.com). The element in question may render correctly after processing by the website build.
-
 ## Contributing
 
-To contribute to [VS Code documentation](https://code.visualstudio.com/docs), you need to fork this repository and submit a pull request for the Markdown and/or image changes that you're proposing.
+To contribute to WBF documentation, you can either:
+
+1. **Small changes**: Edit files directly on GitHub using the "Edit" button
+2. **Larger changes**: Fork this repository and submit a pull request
 
 * [How to fork a repository](https://docs.github.com/get-started/quickstart/fork-a-repo)
 * [How to make a pull request](https://docs.github.com/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request)
 * [Changing a commit message](https://docs.github.com/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/changing-a-commit-message)
 * [How to squash commits](https://docs.github.com/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/about-pull-request-merges#squash-and-merge-your-commits)
 
-The vscode-docs repository supports [Git LFS](https://git-lfs.github.com/) to allow you to avoid bringing down large image files when you clone the repository. See the [README](README.md#contributing) section for details on enabling Git LFS for your local repository.
+The wise-docs repository supports [Git LFS](https://git-lfs.github.com/) for managing large binary files. See the [README](README.md#getting-started) section for details on enabling Git LFS for your local repository.
 
 ## Documentation intent
 
-The goal of the VS Code documentation is to educate users on VS Code features and how VS Code can be used to enhance their development experience with different programming languages and runtimes.
+The goal of WBF's internal documentation is to provide clear, comprehensive information about company systems, processes, and best practices.
 
-The documentation is not intended to provide:
+The documentation should:
 
-* An introduction to coding or software development
-* Tutorials on technologies independent from VS Code
-* Promotion of third-party tools, plug-ins, or services
-* Excessive detail or advanced walkthroughs
-
-The documentation should target developers learning to use VS Code or searching for quick answers to commonly asked questions.  Other forums such as blog posts can provide more detailed content elaborating on specific scenarios.
+* Be accurate and up-to-date
+* Be easy to understand and navigate
+* Provide practical guidance and examples
+* Support both new and experienced team members
+* Cover technical and non-technical topics relevant to WBF
 
 ## Repository organization
 
 This repository contains the following top-level folders:
 
-* \api - content for the API documentation at <https://code.visualstudio.com/api>
-* \blogs - content for the blog at <https://code.visualstudio.com/blogs>
-* \build - content for the documentation build process, such as the keybinding mappings and sitemap
-* \docs - content for the documentation at <https://code.visualstudio.com/docs> - the content in this folder follows the organization of the documentation table of contents
-* \images - images used in the documentation
-* \learn - (deprecated) content for the education content at <https://code.visualstudio.com/learn>
-* \release-notes - content for the release notes at <https://code.visualstudio.com/updates>
-* \remote - content for the remote development tools documentation at <https://code.visualstudio.com/docs/remote>
-* \remote-release-notes - content for the remote development tools release notes
-* \wiki - content for the repository wiki
+* `api/` - API documentation and technical references
+* `blogs/` - Company blog posts and announcements organized by date
+* `build/` - Build scripts and configuration files
+* `docs/` - Main documentation organized by topic
+* `images/` - Shared images and assets
+* `learn/` - Learning resources, tutorials, and training materials
+* `release-notes/` - Software release notes and changelogs (if applicable)
+* `templates/` - Document templates for consistency
 
-Within these folders, you'll find the Markdown files used for the content. Each of these folders also contains an `\images` folder that references the images (such as screenshots) used in the topics.
+Within these folders, you'll find Markdown files for content. Many folders also contain an `images/` subfolder for section-specific images and screenshots.
 
 ### Branches
 
